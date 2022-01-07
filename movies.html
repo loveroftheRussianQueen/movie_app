@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/f84da73aa8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Movie Search</title>
+</head>
+<body>
+    <div id="overlay"></div>
+    <div class="header">
+        <a href="index.html">movie search</a>
+    </div>
+    <div class="app">
+        <h1>discover movies</h1>
+        <div class="genres">
+            <div class="genre">action</div>
+            <div class="genre">adventure</div>
+            <div class="genre">animation</div>
+            <div class="genre">comedy</div>
+            <div class="genre">crime</div>
+            <div class="genre">documentary</div>
+            <div class="genre">drama</div>
+            <div class="genre">family</div>
+            <div class="genre">fantasy</div>
+            <div class="genre">history</div>
+            <div class="genre">horror</div>
+            <div class="genre">music</div>
+            <div class="genre">mystery</div>
+            <div class="genre">romance</div>
+            <div class="genre">science fiction</div>
+            <div class="genre">TV movie</div>
+            <div class="genre">thriller</div>
+            <div class="genre">war</div>
+            <div class="genre">western</div>
+        </div>
+        <div class="movie_container" id="movie_container">
+            <div class="popup" id="popup">
+                <div class="popup_left">
+                    <img src="img/dark_knight.jpg">
+                </div>
+                <div class="popup_right">
+                        <span class="text" id="popup_title">Movie Title</span>
+                        <span class="text" id="popup_tagline">Tagline</span>
+                        <div class="description">
+                        </div>
+                    </div>
+                <span data-close-button="close_button" class="close_popup"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+            </div>
+            <div class="movie" data-modal-target=".popup">
+                <img src="img/dark_knight.jpg">
+                <span class="movie_title">the dark knight</span>
+            </div>
+        </div>
+        <div class="pagination">
+            <ul id="pag">
+                <li class="btn prev" id="prev"><span><i class="fas fa-angle-left">Prev</i></span></li>
+                <li class="numb active" id="numb1"><span>1</span></li>
+                <li class="numb"><span>2</span></li>
+                <li class="numb"><span>3</span></li>
+                <li class="numb"><span>4</span></li>
+                <li class="numb" id="numb5"><span>5</span></li>
+                <li class="dots"><span>...</span></li>
+                <li class="numb"><span>10</span></li>
+                <li class="btn next" id="next"><span>Next<i class="fas fa-angle-right"></i></span></li>
+            </ul>
+        </div>
+        <div class="bottom_menu">
+            <div class="btn">            
+                <span class="material-icons icon">whatshot</span>
+                <span class="icon_text"><a href="index.html">trending</a></span>
+            </div>
+            <div class="btn">
+                <span class="material-icons icon">movie</span>
+                <span class="icon_text"><a href="movies.html">movies</a></span>
+            </div>
+            <div class="btn">
+                <span class="material-icons icon">desktop_windows</span>
+                <span class="icon_text"><a href="shows.html">TV series</a></span>
+            </div>
+            <div class="btn">
+                <span class="material-icons icon">search</span>
+                <span class="icon_text"><a href="search.html">search</span>
+            </div>
+        </div>
+        </div>
+        
+</body>
+</html>
